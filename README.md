@@ -13,12 +13,21 @@
 
 ## 截图预览
 
+**主窗口**
+
 ![主窗口](screenshots/main-window.png)
 
-|  |  |
-| --- | --- |
-| ![桌面快捷方式](screenshots/shortcut.png) 桌面快捷方式 | ![退出确认对话框](screenshots/exit-dialog.png) 关闭时询问是否同时关闭后端 |
-| ![Windows 任务栏](screenshots/taskbar.png) Windows 任务栏中运行 | |
+**桌面快捷方式**
+
+![桌面快捷方式](screenshots/shortcut.png)
+
+**退出确认对话框**
+
+![退出确认对话框](screenshots/exit-dialog.png)
+
+**Windows 任务栏中运行**
+
+![Windows 任务栏中运行](screenshots/taskbar.png)
 
 ## 快速开始
 
