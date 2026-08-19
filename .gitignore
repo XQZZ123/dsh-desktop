@@ -1,5 +1,6 @@
 # 构建产物（由 build.ps1 生成，不入库；发布时打包成 zip 放 Releases）
 bin/
+DshDesktop-bin.zip
 
 # Visual Studio / 用户配置文件
 *.user
