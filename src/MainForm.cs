@@ -21,6 +21,7 @@ namespace DshDesktop
         private readonly Backend _backend;
 
         private WebView2 _web;
+        private Panel _webHost;
         private Label _statusLabel;
         private StatusStrip _statusStrip;
         private ToolStripStatusLabel _statusText;
@@ -43,9 +44,11 @@ namespace DshDesktop
             catch { }
 
             _statusStrip = new StatusStrip();
+            _statusStrip.Dock = DockStyle.Bottom;
             _statusText = new ToolStripStatusLabel("正在启动…");
             _statusStrip.Items.Add(_statusText);
             Controls.Add(_statusStrip);
+            _statusStrip.BringToFront();
 
             _statusLabel = new Label();
             _statusLabel.Dock = DockStyle.Fill;
@@ -56,10 +59,16 @@ namespace DshDesktop
             _statusLabel.Text = "正在准备 DSH 桌面版…";
             Controls.Add(_statusLabel);
 
+            // WebView2 放进独立的 Fill 容器，StatusStrip 保持 Bottom 且 z 序最上层，
+            // 这样状态栏固定在底部，WebView2 自动让出底部空间，不会遮挡页面内容。
+            _webHost = new Panel();
+            _webHost.Dock = DockStyle.Fill;
             _web = new WebView2();
             _web.Dock = DockStyle.Fill;
             _web.Visible = false;
-            Controls.Add(_web);
+            _webHost.Controls.Add(_web);
+            Controls.Add(_webHost);
+            _webHost.BringToFront();
 
             BuildTray();
         }
@@ -117,6 +126,14 @@ namespace DshDesktop
                 _statusLabel.Visible = false;
                 _edgeMode = false;
                 SetStatus("已连接 " + _cfg.Host + ":" + _cfg.Port);
+                // 强制容器重排：确保 WebView2 占满状态栏以上区域，不被状态栏遮挡。
+                try
+                {
+                    _webHost.BringToFront();
+                    _webHost.PerformLayout();
+                    _web.BringToFront();
+                }
+                catch { }
                 try
                 {
                     _tray.ShowBalloonTip(3000, "DSH 桌面版", "已连接 " + _backend.Url, ToolTipIcon.Info);
