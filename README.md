@@ -17,8 +17,8 @@
 
 |  |  |
 | --- | --- |
-| ![桌面快捷方式](screenshots/shortcut.png) 桌面快捷方式（鲸鱼图标） | ![退出确认对话框](screenshots/exit-dialog.png) 关闭时询问是否同时关闭后端 |
-| ![Windows 任务栏](screenshots/taskbar.png) Windows 任务栏中运行（底部有蓝色下划线表示激活） | |
+| ![桌面快捷方式](screenshots/shortcut.png) 桌面快捷方式 | ![退出确认对话框](screenshots/exit-dialog.png) 关闭时询问是否同时关闭后端 |
+| ![Windows 任务栏](screenshots/taskbar.png) Windows 任务栏中运行 | |
 
 ## 快速开始
 
