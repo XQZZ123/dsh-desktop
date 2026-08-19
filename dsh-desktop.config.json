@@ -1,0 +1,13 @@
+{
+  "comment": "DSH 桌面版配置样例（参考）。程序实际读取 %APPDATA%\\DshDesktop\\config.json，首次运行自动生成。修改后重启程序生效。注意：JSON 不支持 // 注释。",
+  "nodePath": "",
+  "dshLib": "",
+  "dshHome": "",
+  "host": "127.0.0.1",
+  "port": 3080,
+  "startTimeoutSeconds": 90,
+  "killBackendOnExit": true,
+  "edgeFallback": true,
+  "title": "DeepSeek Harness",
+  "userDataFolder": ""
+}

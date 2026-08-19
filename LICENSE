@@ -1,0 +1,29 @@
+MIT License
+
+Copyright (c) 2025 XQZZ123
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## 第三方组件与素材说明
+
+- **DeepSeek Harness (DSH)**: 本项目的桌面壳所包装/启动的后端程序为 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)，其源码遵循其自身许可证（Apache-2.0）。
+- **DeepSeek 鲸鱼 logo**: 应用图标来源于 DeepSeek 网页端 `favicon.svg`，logo 版权归 DeepSeek（深度求索）所有，仅用于在桌面壳中标识所包装的应用，不构成对 logo 本身的授权。
+- **Microsoft.Web.WebView2 / WebView2Loader**: 构建脚本从本机已安装应用离线复制这些微软可再发行组件，属微软官方可再发行组件，遵循微软再发行条款。
