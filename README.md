@@ -17,8 +17,8 @@
 
 |  |  |
 | --- | --- |
-| ![状态栏](screenshots/status-bar.png) 状态栏显示后端连接状态 | ![托盘](screenshots/tray-icon.png) 系统托盘图标，可随时唤起/退出 |
-| ![界面局部](screenshots/ui-panel.png) WebView2 内嵌的 DSH 界面 | |
+| ![桌面快捷方式](screenshots/shortcut.png) 桌面快捷方式（鲸鱼图标） | ![退出确认对话框](screenshots/exit-dialog.png) 关闭时询问是否同时关闭后端 |
+| ![Windows 任务栏](screenshots/taskbar.png) Windows 任务栏中运行（底部有蓝色下划线表示激活） | |
 
 ## 快速开始
 
