@@ -11,6 +11,15 @@
 - **干净退出**：关闭窗口时询问是否同时关闭后端（仅在本次由它启动时；连接已有后端时不打扰）。
 - **完全离线构建**：只用 Windows 自带的 `.NET Framework csc.exe` 与本机已有的 WebView2 程序集，不需要网络、不需要 dotnet SDK、不需要 npm。
 
+## 截图预览
+
+![主窗口](screenshots/main-window.png)
+
+|  |  |
+| --- | --- |
+| ![状态栏](screenshots/status-bar.png) 状态栏显示后端连接状态 | ![托盘](screenshots/tray-icon.png) 系统托盘图标，可随时唤起/退出 |
+| ![界面局部](screenshots/ui-panel.png) WebView2 内嵌的 DSH 界面 | |
+
 ## 快速开始
 
 ```powershell
@@ -79,6 +88,7 @@ dsh-desktop/
 ├─ dsh-desktop.config.json  配置样例
 ├─ app.manifest          DPI 感知 manifest
 ├─ assets/               图标素材
+├─ screenshots/          README 中展示的截图
 ├─ LICENSE               MIT 许可证
 └─ bin/                  构建产物（DshDesktop.exe + WebView2 DLL，不入库）
 ```
